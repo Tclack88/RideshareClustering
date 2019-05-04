@@ -1,0 +1,58 @@
+vi.
+
+Project premise:
+	Inspired by the stress of coordinating riders and drivers for a music club.
+	This club has around 100 musicians, each of whom have changing 
+	availabilities. Each weekend a subset of this (20 or so) go to perform for
+	a local retirement center or homeless shelter. A "gig coordinator" is 
+	assigned each week to get in contact with the drivers and riders and it
+	has turned out to be quite a headache. This code is intended to automate it.
+
+
+
+The program is run simply by running 'main.py'.
+
+As you can see in the figures, Clustering was successful.
+The data shown was taken from inputs in a user-friendly GoogleDoc survey.
+Two surveys had to be filled:
+	-One MasterList which contained the majority of the information as to where
+	the riders and drivers live.
+	-One "Are you going this week" sort of survey.
+
+Structuring it this way makes each week very easy since the members only need
+to fill out the "hard data" just once per year at most; each subsequent
+submission takes less than a minute.
+
+
+
+
+In order to make this algorithm less "one-and-done", we've created a 
+DatGen.py and demo.py function which generate random data to illustrate the
+code more dynamically.
+
+
+
+
+
+vii
+Credits:
+
+There was mauch cross over but the following list reflects the majority work
+
+Austin Taylor:
+clusterfunc.py definitions:
+		-adjaceancy
+		-cluster *****
+		-clusterdraw
+-Latex compilation
+-Iterating and finalizing main.py
+
+Trevor Clack:
+-clusterfunc.py definitions:
+		-LocGrpMatch
+		-DriverToGrp
+		-LocMap
+
+-Front end data acquisition (google doc forms)
+-Beggining of main.py (Reading into files and creating dictionaries)
+-DatGen
